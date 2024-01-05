@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="images/cute_cat.jpg">
-    <title>Bubi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <img src="images/kitty2.jpg">
-</body>
-</html>
+
+<h2 class="title">Knigge-App</h2>
+
+<div id="result">
+    <img id="correct-result" src="images/correct.svg"/>
+    <img id="false-result" src="images/false.svg"/>
+</div>
+
+<div class="canvas">
+    <div class="cabin">
+        <div class="harper-box" ondrop="dress(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="harper" ><img src="images/harper.svg"></div>
+    </div>
+
+    <div class="wardrobe"></div>
+</div>
+
+<div class="buttons">
+    <button class="start-button" onclick="loadClothes()">Start</button>
+    <button class="validate-button" onclick="validate()">Validate</button>
+    <button class="reset-button" onclick="reset()">Reset</button>
+</div>
+
+<!-- <div class="scratch-app">
+    <h2>Scratch App</h2>
+    <iframe src="https://scratch.mit.edu/projects/943464449/embed" style="border: none;"></iframe>
+</div> -->
+
+
+<script src="js/script.js"></script>
