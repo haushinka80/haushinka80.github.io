@@ -40,15 +40,16 @@ function validate() {
     if ((childNodes.find(c => c.id.localeCompare("shirt2.svg") == 0) &&
         childNodes.find(c => c.id.localeCompare("pants1.svg") == 0) &&
         childNodes.find(c => c.id.localeCompare("shoes1.svg") == 0) &&
-        childNodes.find(c => c.id.localeCompare("glasses1.svg") == 0)) ||
+        childNodes.find(c => c.id.localeCompare("glasses1.svg") == 0) && childNodes.length == 4) ||
         (childNodes.find(c => c.id.localeCompare("glasses2.svg") == 0)) &&
-        childNodes.find(c => c.id.localeCompare("shoes2.svg"))) {
+        childNodes.find(c => c.id.localeCompare("shoes2.svg")) && childNodes.length == 2) {
         console.log("Correct");
         document.querySelector("#correct-result").style.display = "block";
     } else {
         console.log("Incorrect");
         document.querySelector("#false-result").style.display = "block";
     }
+    loadClothes();
 }
 
 function loadClothes() {
@@ -100,6 +101,7 @@ function reset() {
     harperBox.innerHTML = "";
     document.querySelector("#correct-result").style.display = "none";
     document.querySelector("#false-result").style.display = "none";
+    loadClothes();
 }
 
 function changeDressClass(item) {
