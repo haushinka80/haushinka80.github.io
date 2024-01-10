@@ -1,0 +1,148 @@
+body {
+    margin: 50px 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+#correct-result, #false-result {
+    display: none;
+    width: 100px;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.canvas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.cabin {
+    width: 90px;
+    height: 250px;
+}
+
+.harper {
+    z-index: -1;
+    position: relative;
+}
+
+.harper-box {
+    z-index: 0;
+    position: absolute;
+    width: 88px;
+    height: 246px;
+}
+
+.buttons {
+    text-align: center;
+    margin: 30px;
+    border: none;
+}
+
+.validate-button {
+    background-color: lightgreen;
+    border-color: lawngreen;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: lightblue;
+    border-color: lightskyblue;
+    box-shadow: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: lightcoral;
+    border-color: coral;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.scratch-app {
+    width: 100%;
+    border-style: solid;
+    text-align: center;
+}
+
+.dressed-dress {
+    margin-top: 80px;
+    z-index: 2;
+    position: absolute;
+}
+
+.dressed-pants {
+    z-index: 1;
+    margin: 132px 0 0 18px;
+    position: absolute;
+}
+
+.dressed-shirt {
+    margin: 80px 0 0 7px;
+    z-index: 3;
+    position: absolute;
+}
+
+.dressed-shoes {
+    margin: 230px 0 0 20px;
+    z-index: 2;
+    position: absolute;
+}
+
+.dressed-boots {
+    margin: 210px 0 0 8px;
+    z-index: 3;
+    position: absolute;
+}
+
+.dressed-glasses {
+    margin: 30px 0 0 8px;
+    z-index: 1;
+    position: absolute;
+}
+
+.dressed-round-glasses {
+    margin: 40px 0 0 22px;
+    z-index: 1;
+    position: absolute;
+}
+
+.storageBox {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    opacity: 1;
+}
+
+.storageBox > img {
+    opacity: 0.2;
+}
